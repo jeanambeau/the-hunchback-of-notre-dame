@@ -1,0 +1,18 @@
+
+        {
+          "name": "The Hunchback of Notre Dame Lite",
+          "short_name": "The Hunchback of Notre Dame",
+          "start_url": "index.html",
+          "display": "standalone",
+          "icons":[{"src": "data/images/header/logo.png"}],
+          "prefer_related_applications": true,
+          "related_applications": [
+            {
+              "platform": "play",
+              "id": "com.imabuilder.bighouse.thehunchbackofnotredame"
+            }
+          ],
+         "background_color": "#ffffff",
+         "theme_color": "#000000"
+        }
+                
