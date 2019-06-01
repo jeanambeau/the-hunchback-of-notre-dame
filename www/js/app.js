@@ -53,7 +53,7 @@ angular.module("the_hunchback_of_notre_dame", ["ngCordova","ionic","ionMdInput",
 			if($ionicHistory.backView()){
 				$ionicHistory.goBack();
 			}else{
-				$state.go("the_hunchback_of_notre_dame.dashboard");
+				$state.go("the_hunchback_of_notre_dame.hunchback");
 			}
 			e.preventDefault();
 			return false;
@@ -211,6 +211,7 @@ angular.module("the_hunchback_of_notre_dame", ["ngCordova","ionic","ionMdInput",
 
 	.state("the_hunchback_of_notre_dame.hunchback", {
 		url: "/hunchback",
+		cache:false,
 		views: {
 			"the_hunchback_of_notre_dame-side_menus" : {
 						templateUrl:"templates/the_hunchback_of_notre_dame-hunchback.html",
@@ -226,5 +227,5 @@ angular.module("the_hunchback_of_notre_dame", ["ngCordova","ionic","ionMdInput",
 // router by user
 
 
-	$urlRouterProvider.otherwise("/the_hunchback_of_notre_dame/dashboard");
+	$urlRouterProvider.otherwise("/the_hunchback_of_notre_dame/hunchback");
 });

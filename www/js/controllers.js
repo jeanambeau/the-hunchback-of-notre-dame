@@ -172,9 +172,9 @@ angular.module("the_hunchback_of_notre_dame.controllers", [])
 					for(var e = 0; e < keys.length ; e++) {
 						localforage.setItem(keys[e],[]);
 					}
-					$state.go("the_hunchback_of_notre_dame.dashboard");
+					$state.go("the_hunchback_of_notre_dame.hunchback");
 				}).catch(function(err) {
-					$state.go("the_hunchback_of_notre_dame.dashboard");
+					$state.go("the_hunchback_of_notre_dame.hunchback");
 				});
 			}
 			$rootScope.closeMenuPopover();
